@@ -8,9 +8,7 @@
 	<meta name="viewport" content="width=device=width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+	<script src="https://kit.fontawesome.com/e576f39845.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,12 +17,29 @@
 	<nav class="navbar navbar-light navbar-expand-sm bg-light">
 		<a href="/" class="navbar-brand">
 			Fruit juice Drop</a>
-		<ul class="navbar-nav mr-auto">
-			<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-			<li class="nav-item mr-2"><a class="nav-link" href="">About</a></li>
-			<li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="">Sign In / Sign Up</a></li>
-		</ul>
 
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav mr-auto">
+				<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+				<li class="nav-item mr-2"><a class="nav-link" href="">About</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Fruit juices
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Lemonade</a>
+						<a class="dropdown-item" href="#">Orange Juice</a>
+						<a class="dropdown-item" href="#">Apple Juice</a>
+						<a class="dropdown-item" href="#">Grape Juice</a>
+                        <a class="dropdown-item" href="#">Pineapple Juice</a>
+					</div>
+				</li>
+		<li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="">Sign In / Sign Up</a></li>
+		</ul>
+		</div>
 		<div class="d-none d-md-block">
 			<p class="navbar-text my-auto mr-2"><i>Great fruit juice delivered to your door</i></p>
 			<a href="/login">Sign In / Sign Up</a>
@@ -33,15 +48,24 @@
 	</nav>
 
 	<article class="container mt-3">
+		<div class="row d-none d-sm-block">
+			<div class="col-12">
+				<div class="alert alert-warning">
+					<strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for 6! <a href="">See
+						here for details</a>
+				</div>
+			</div>
+		</div>
+
 		<!-- Callout -->
 		<div class="row">
 			<div class="col-12">
 				<section class="callout jumbotron text-center">
 					<h1>The finest fruit juices delivered to your doorstep.</h1>
 					<p class="lead">Sign up today to start receiving the world's best fruit juices every month.
-						<s class="d-none d-sm-inline">3.99€</s> 
-                        <span class="d-inline d-sm-none"><br></span>
-                        <strong><mark>First one is free!</mark></strong></p>
+						<s class="d-none d-sm-inline">3.99€</s>
+						<span class="d-inline d-sm-none"><br></span>
+						<strong><mark>First one is free!</mark></strong></p>
 					<button class="btn btn-success btn-lg">Sign up!</button>
 					<p class="text-muted">
 						<small>You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
@@ -60,18 +84,34 @@
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-6">
-					<blockquote class="blockquote">
-						<p>I've been introduced to more than 10 great international fruit juices I never knew about.</p>
-						<p>- Jane Doe</p>
-					</blockquote>
-				</div>
-				<div class="col-12 col-md-6">
-					<blockquote class="blockquote">
-						<p>I haven't took vitamin supplements for months!</p>
-						<p>- Jane Doe</p>
-					</blockquote>
-				</div>
-			</div>
+					<div class="media">
+						<div class="d-none d-sm-block">
+							<img src="images/woman.jpg" class="rounded-circle mr-3" height="100" width="100">
+                        </div>
+							<div class="media-body">
+								<blockquote class="blockquote">
+									<p>I've been introduced to more than 10 great international fruit juices I never
+										knew
+										about.</p>
+									<p>- Jane Doe</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="media">
+							<div class="d-none d-sm-block">
+								<img src="images/man.jpg" class="rounded-circle mr-3" height="100" width="100">
+							</div>
+								<div class="media-body">
+									<blockquote class="blockquote">
+										<p>I haven't took vitamin supplements for months!</p>
+										<p>- Jane Doe</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
 		</section>
 		<!-- /.quotes -->
 		<hr>
@@ -86,7 +126,8 @@
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="feature">
-						<h3>Feature 1</h3>
+						<h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1
+							<span class="badge badge-success">NEW!</span></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore
 							et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -98,7 +139,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="feature">
-						<h3>Feature 2</h3>
+						<h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore
 							et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -110,7 +151,7 @@
 				</div>
 				<div class="col-12 d-md-none d-lg d-lg-block col-lg-4">
 					<div class="feature">
-						<h3>Feature 3</h3>
+						<h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore
 							et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -134,46 +175,55 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-auto">
-						<table class="table table-striped table-responsive">
-							<thead>
-								<tr>
-									<th scope="col">name</th>
-									<th scope="col">origin</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<!-- <th scope="row"></th> -->
-									<td>Mango</td>
-									<td>Haiti</td>
-								</tr>
-								<tr>
-									<!-- <th scope="row"></th> -->
-									<td>Ackee</td>
-									<td>Jamaica</td>
-								</tr>
-								<tr>
-									<!-- <th scope="row"></th> -->
-									<td>Kiwi</td>
-									<td>New Zealand</td>
-								</tr>
-								<tr>
-									<!-- <th scope="row"></th> -->
-									<td>Papaya</td>
-									<td>Malaysia</td>
-								</tr>
-								<tr>
-									<!-- <th scope="row"></th> -->
-									<td>Banana</td>
-									<td>Cuba</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+					<table class="table table-striped table-responsive">
+						<thead>
+							<tr>
+								<th scope="col">name</th>
+								<th scope="col">origin</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<!-- <th scope="row"></th> -->
+								<td>Mango</td>
+								<td>Haiti</td>
+							</tr>
+							<tr>
+								<!-- <th scope="row"></th> -->
+								<td>Ackee</td>
+								<td>Jamaica</td>
+							</tr>
+							<tr>
+								<!-- <th scope="row"></th> -->
+								<td>Kiwi</td>
+								<td>New Zealand</td>
+							</tr>
+							<tr>
+								<!-- <th scope="row"></th> -->
+								<td>Papaya</td>
+								<td>Malaysia</td>
+							</tr>
+							<tr>
+								<!-- <th scope="row"></th> -->
+								<td>Banana</td>
+								<td>Cuba</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-		</section>
+			</div>
+		</section>F
 		<!-- /.monthly_favorites-->
 	</article>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
 </body>
 
 </html>
