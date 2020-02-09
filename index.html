@@ -13,7 +13,7 @@
 
 <body>
 
-	<!--Nav-->
+	<!-- Navbar -->
 	<nav class="navbar navbar-light navbar-expand-sm bg-light">
 		<a href="/" class="navbar-brand">
 			Fruit juice Drop</a>
@@ -34,28 +34,31 @@
 						<a class="dropdown-item" href="#">Orange Juice</a>
 						<a class="dropdown-item" href="#">Apple Juice</a>
 						<a class="dropdown-item" href="#">Grape Juice</a>
-                        <a class="dropdown-item" href="#">Pineapple Juice</a>
+						<a class="dropdown-item" href="#">Pineapple Juice</a>
 					</div>
 				</li>
-		<li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="">Sign In / Sign Up</a></li>
-		</ul>
+                <!-- class="nav-item mr-2 d-block d-sm-none" -->
+				<li class="nav-item mr-2 d-block d-md-none"><a class="nav-link" href="">Sign In / Sign Up</a></li>
+			</ul>
 		</div>
 		<div class="d-none d-md-block">
 			<p class="navbar-text my-auto mr-2"><i>Great fruit juice delivered to your door</i></p>
 			<a href="/login">Sign In / Sign Up</a>
 		</div>
-		<!--</div>-->
 	</nav>
+	<!-- /navbar -->
 
 	<article class="container mt-3">
+
+		<!-- Alert -->
 		<div class="row d-none d-sm-block">
 			<div class="col-12">
 				<div class="alert alert-warning">
-					<strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for 6! <a href="">See
-						here for details</a>
+					<strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for 6! See <a href="">here</a> for details.
 				</div>
 			</div>
 		</div>
+		<!-- /alert -->
 
 		<!-- Callout -->
 		<div class="row">
@@ -66,7 +69,7 @@
 						<s class="d-none d-sm-inline">3.99€</s>
 						<span class="d-inline d-sm-none"><br></span>
 						<strong><mark>First one is free!</mark></strong></p>
-					<button class="btn btn-success btn-lg">Sign up!</button>
+					<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign up!</button>
 					<p class="text-muted">
 						<small>You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
 				</section>
@@ -185,36 +188,70 @@
 						<tbody>
 							<tr>
 								<!-- <th scope="row"></th> -->
-								<td>Mango</td>
+								<td>Mango juice</td>
 								<td>Haiti</td>
 							</tr>
 							<tr>
 								<!-- <th scope="row"></th> -->
-								<td>Ackee</td>
+								<td>Ackee juice</td>
 								<td>Jamaica</td>
 							</tr>
 							<tr>
 								<!-- <th scope="row"></th> -->
-								<td>Kiwi</td>
+								<td>Kiwi juice</td>
 								<td>New Zealand</td>
 							</tr>
 							<tr>
 								<!-- <th scope="row"></th> -->
-								<td>Papaya</td>
+								<td>Papaya juice</td>
 								<td>Malaysia</td>
 							</tr>
 							<tr>
 								<!-- <th scope="row"></th> -->
-								<td>Banana</td>
+								<td>Banana juice</td>
 								<td>Cuba</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
-		</section>F
+		</section>
 		<!-- /.monthly_favorites-->
 	</article>
+
+	<!-- modal -->
+	<div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Sign Up To Fruit Juice Drop!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+							<label for="repeatPassword">Repeat Password</label>
+							<input type="password" class="form-control" id="repeatPassword" placeholder="Reapeat Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /modal -->
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 	</script>
