@@ -1,3 +1,3 @@
-# Fruit Juice Drop
+# Fruit Juice Delight
 
-Fruit Juice Drop is a web app using Bootstrap v4.4  
+Fruit Juice Delight is a web app using Bootstrap v4.4  
