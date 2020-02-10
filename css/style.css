@@ -16,9 +16,9 @@ body {
 }
 
 .callout-container {
-    height: 100vh;
+    height: 90vh;
 
-    background: url(../images/fruit-juice-background.jpg) no-repeat bottom right fixed; 
+    background: url(../images/orange-juice-background.jpg) no-repeat bottom right fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,9 +40,57 @@ body {
     background-color: rgba(0,0,0,0.5)
 }
 
-.quotes-container {}
+.quotes-container {
+    margin-bottom: 20px;
+}
 
-.features-container {}
+.favorites-container {
+    height: 80vh;
+
+    background: url(../images/strawberry-juice-background.jpg) no-repeat bottom right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+/* Page headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+.features .page-header {
+    margin-bottom: 25px;
+}
+
+.callout .page-header {
+    margin-top: 80px;
+}
+
+.favorites .page-header {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
 
 /* Block dividers*/
 
@@ -50,14 +98,41 @@ body {
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
-.block-divider--blue {
+.block-divider--orange {
     background-color: #e25d00;
+}
+
+.block-divider--lightgrey {
+    background-color: #a7a7a7;
 }
 
 .block-divider--short {
     width: 35px;
+}
+
+.block-divider--white {
+    background-color: #ffffff;
+}
+
+/* Content containers */
+
+.container-wrapper {
+}
+
+.container-wrapper--red {
+    background-color: #e25d00;
+    color: #ffffff;
+}
+
+.container-features {
+}
+
+.content-container {
+    padding-top: 75px;
+    scroll-padding-bottom: 75px;
 }
 
 /* Navbar */
@@ -89,6 +164,7 @@ body {
 .navbar .navbar-nav a {
     font-weight: bold;
 }
+
 /* Jumbotron */
 
 .jumbotron {
@@ -122,7 +198,7 @@ body {
 
 .btn--orange {
     color: white;
-     background-color:#e25d00;
+    background-color:#e25d00;
     border-color: #e25d00;
 }
 
@@ -134,5 +210,50 @@ body {
     border-color: #bb530a;
 }
 
+.features {
+    padding-bottom: 40px;
+}
 
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
+.features i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.features .btn {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e25d00;
+}
+
+.media {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.favorite {
+    text-align: center;
+}
+
+.favorite td, .favorite th, .favorite thead th {
+    font-weight: bold;
+    border: none;
+    border-bottom: none;
+}
+
+.favorite th {
+    color:#a7a7a7;
+}
+
+.favorite td {
+    color:#ffffff; 
+}
