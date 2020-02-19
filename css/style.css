@@ -1,8 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     overflow: auto;
-    position: relative; 
-    top: -24px;
 }
 
 .alert-container .col-12 {
