@@ -3,64 +3,6 @@ body {
     overflow: auto;
 }
 
-.alert-container .col-12 {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.site-wide-alert {
-    border-radius: 0;
-    margin-bottom: 0;
-    padding: 5px 15px;
-    background-color: #eec802;
-    border-color: #eec802;
-}
-
-.callout-container {
-    height: 90vh;
-
-    background: url(../images/orange-juice-background.jpg) no-repeat bottom right fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-}
-
-.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5)
-}
-
-.quotes-container {
-    margin-bottom: 20px;
-}
-
-.favorites-container {
-    height: 80vh;
-
-    background: url(../images/strawberry-juice-background.jpg) no-repeat bottom right fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-}
-
 /* Page headers */
 
 .page-header {
@@ -130,7 +72,22 @@ body {
     scroll-padding-bottom: 75px;
 }
 
-/* Navbar */
+/* ---------------------------------------------------- Alert section --------------------*/
+
+.alert-container .col-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #eec802;
+    border-color: #eec802;
+}
+
+/* ---------------------------------------------------- Navbar --------------------*/
 
 .navalert-container {
     position: absolute;
@@ -168,6 +125,33 @@ body {
 
 .dropdown-menu {
     background-color: #dee2e6;
+}
+
+/* ---------------------------------------------------- Callout section --------------------*/
+
+.callout-container {
+    height: 90vh;
+
+    background: url(../images/orange-juice-background.jpg) no-repeat bottom right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5)
 }
 
 /* Jumbotron */
@@ -215,6 +199,25 @@ body {
     border-color: #bb530a;
 }
 
+/* Modal */
+
+.form-control {
+    background-color: #e9ecef; 
+}
+
+/* ---------------------------------------------------- Quotes section --------------------*/
+
+.quotes-container {
+    margin-bottom: 20px;
+}
+
+.media {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+/* ---------------------------------------------------- Features section --------------------*/
+
 .features {
     padding-bottom: 40px;
 }
@@ -240,9 +243,22 @@ body {
     color: #e25d00;
 }
 
-.media {
-    margin-bottom: 30px;
-    margin-top: 0;
+/* ---------------------------------------------------- Favorites section --------------------*/
+
+.favorites-container {
+    height: 80vh;
+
+    background: url(../images/strawberry-juice-background.jpg) no-repeat bottom right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
 }
 
 .favorite {
